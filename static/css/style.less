@@ -194,7 +194,15 @@ body {
         }
         @media all and (min-width: 940px) {
             display: inline-block;
+            padding-top: 0.5em;
+            &.now {
+                border: 0.125em solid @ribbon;
+                border-radius: 1em;
+                color: @ribbon;
+                &:hover { color: white; background: @ribbon; }
+            }
         }
+
     }
 }
 
