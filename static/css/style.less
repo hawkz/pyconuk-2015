@@ -51,11 +51,23 @@ body {
     .font;
     -webkit-font-smoothing: antialiased;
 
-    &.home {
+    &.home, &.education {
         .head, .intro {
             background: @red;
         }
         .disabled { color: darken(@red, 10%) !important; }
+    }
+    &.talks, &.science {
+        .head, .intro {
+            background: @yellow;
+        }
+        .disabled { color: darken(@yellow, 10%) !important; }
+    }
+    &.venue {
+        .head, .intro {
+            background: @blue;
+        }
+        .disabled { color: darken(@blue, 10%) !important; }
     }
 }
 
@@ -202,7 +214,7 @@ body {
                 &:hover { color: white; background: @ribbon; }
             }
         }
-
+        &.active { color: white; }
     }
 }
 
@@ -221,4 +233,12 @@ body {
 
 .imageblock {
     img { width: 100%; height: auto; display: block; }
+}
+
+.textblock {
+    .huge {
+          font-size: 6em;
+          text-transform: uppercase;
+          text-align: center;
+    }
 }
