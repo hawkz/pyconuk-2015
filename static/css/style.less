@@ -69,6 +69,28 @@ body {
         }
         .disabled { color: darken(@blue, 10%) !important; }
     }
+
+    &.talks {
+        .intro {
+            background: @yellow url(../img/talks.jpg) center center no-repeat;
+            background-size: cover;
+        }
+    }
+
+    &.venue {
+        .intro {
+            background: @blue url(../img/venue.jpg) center center no-repeat;
+            background-size: cover;
+        }
+    }
+}
+
+a {
+    color: @blue;
+}
+
+iframe {
+    display: block;
 }
 
 .hidden { display: none; }
@@ -237,8 +259,26 @@ body {
 
 .textblock {
     .huge {
-          font-size: 6em;
-          text-transform: uppercase;
-          text-align: center;
+        margin: 0.5em 0 0 0;
+        font-size: 6em;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: normal;
+        margin: 2em 0 0.5em 0;
+        color: black;
+    }
+    dt {
+        font-weight: bold;
+        color: black;
+    }
+    dd {
+        margin: 0.5em 0 2em 0;
+    }
+    .column_intro & {
+        h1, h2, h3, h4, h5, h6 { color: white; }
     }
 }
+
+
